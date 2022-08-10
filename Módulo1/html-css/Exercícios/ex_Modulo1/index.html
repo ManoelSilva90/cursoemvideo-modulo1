@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/html-icone.ico" type="image/x-icon">
+    <title>Curso em Video - Modulo 01</title>
+
+     <!-- Folhas de estilos -->
+     <style>
+        body {
+            background-color: rgb(161, 161, 226);
+        }
+
+        mark {
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Esse é meu primeiro documento HTML! Estou muito feliz!</p>
+    <p>Este é um momento único! Estou criando um site!</p>
+
+    <hr> <!--linha horizontal-->
+
+    <h1>**Parágrafos e quebras de linhas</h1>
+    <p>Você pode escrever um parágrafo de qualquer jeito.<br>
+        Basta colocar tudo no meio do par de tags &lt;p&gt; e &lt;/p&gt;.
+    </p> <!-- (&lt;) = <  e  (&gt;) = > -->
+    <p>
+        Se precisar quebra o texto em algum lugar específico como esse,<br>   
+        você pode usar a tag &lt;br&gt;.
+    </p> <!-- <br> = Quebra a linha -->
+    <p>Vamos adicionar alguns símbolos especiais:
+        &reg;
+        &copy;
+        &trade;
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &delta;
+        &Delta;
+        &uarr;
+    </p>
+    <p>Vamos adicionar alguns emoji:
+        &#x1F60D;
+        &#x1F596;
+        &#x1F913;
+    </p> <!-- emojipedia : Codepoints=U+1F60D - (&#x1F60D) --> 
+
+    <hr> <!--linha horizontal-->
+
+    <h1>**Testando carga e imagens</h1>
+    <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
+    <img src="imagens/logo-hmtl5-200.png" alt="Logo HTML5">
+    <p>Podemos também carregar imagens que estão em sub-pastas.</p>
+    <img src="imagens/logo-css3-200.png" alt="Logo CSS3">
+    <p>Também podemos carregar imagens externas.</p>
+    <img src="https://i0.wp.com/blogs.embarcadero.com/wp-content/uploads/2020/08/JavaScript-logo.png?fit=194%2C300&ssl=1" alt="Logo JavaScript"> <!-- url -->
+
+    <hr> <!--linha horizontal-->
+
+    <h1>Olha o favicon aqui em cima</h1>
+    <!-- <link rel="shortcut icon" href="html-icone.ico" type="image/x-icon"> -->
+
+    <hr> <!--linha horizontal-->
+
+    <!-- Cap 7 -->
+    <h1>**hierarquia h1 a h6 - níveis de títulos </h1>
+    <h1>Entendendo Portugual</h1>
+    <h2>INTRODUÇÃO</h2>
+    <h3>Justificação da temática</h3>
+    <!-- <p>lorem</p> texto blablabla -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ut reiciendis quo corporis repellendus, sit optio similique beatae cupiditate architecto explicabo! Perferendis quo impedit eius autem voluptatibus at quos vero.</p>
+    <h3>Caráter excecional</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi neque, similique quae aperiam laudantium eveniet impedit itaque maxime. Dicta fugit neque, aut et reiciendis odio dolorum distinctio culpa pariatur mollitia!</p>
+    <h3>Perguntas de partida</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui saepe ratione expedita quidem autem facilis voluptatibus vero recusandae. Possimus dolores ducimus laboriosam, officia non repellendus quos. Atque, mollitia maxime?</p>
+    <h3>Metodologia de investigação</h3>
+    <h4>Etapas de investigação</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quam quos harum voluptatum perferendis quaerat esse temporibus neque quas officiis distinctio doloribus dolores deserunt, laudantium libero amet nemo quis provident.</p>
+    <h4>Instrumentos de investigação</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis asperiores accusamus voluptate aliquid itaque odit iusto? Nobis facere, et natus nisi cumque laboriosam temporibus tempora voluptas maiores illum officiis! Autem?</p>
+    <h2>O ORDENAMENTO DO TERRITÓRIO EM PORTUGAL</h2>
+    <h3>Os instrumentos de gestão</h3>
+    <h4>Os instrumentos de planejamentos</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, suscipit modi qui voluptas officiis omnis sapiente illum esse laboriosam repellendus eos, ut fugiat doloremque eveniet pariatur neque culpa ipsa quod?</p>
+    <h4>Os regimes territoriais especiais</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa tenetur temporibus in porro praesentium quibusdam consequatur molestiae sunt! Iure tempora omnis dolores tenetur fugit iusto, quae expedita dolor! Incidunt?</p>
+
+    <hr> <!--linha horizontal-->
+
+    <!-- Semantica -  Cap 8 -->
+    <p>
+        Eu moro na <address>Rua dos Capixabas 229 - botafogo - RJ</address>
+    </p>
+
+    <!-- Cap 8 - semântica: negrito e itálico --> <!-- colocar tags:  ctrl + shitf + p -> envelopar com abreviação -> tag + enter -->
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;B&gt; (não semântica). </p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;STRONG&gt; (semâtica). </p>
+    
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag &lt;I&gt; (não semântica). </p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag &lt;EM&gt; (semântica).</p>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;MARK&gt;.</p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <!-- tag big em vermelho já está obsoleta -->
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;U&gt; (não semântica).</p>
+
+    <h2>Texto sobescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo h<sub>2</sub>0</p>
+
+    <!--Cap8 - contunação-->
+    <h1>**Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    
+    <!--Python-->
+    <pre> <!-- tag identada -->
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f' O número {num} é PAR')
+            else:
+                print(f' O número {num} é ÍMPAR')
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!-- <q> = aspas - Citação Simples-->
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="http://endereço"> <!-- Citação de bloco, quebra de linha e deslocada para direita, cite=refencia do enderaço para manter os direitos de quem fez o conteudo-->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem at ducimus vero repellat reprehenderit, sint suscipit ratione maxime architecto illo voluptatum praesentium! Repellat dolor libero, sint totam animi facilis.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, Estou adorando!</p>
+
+    <h2>Texto invertido</h2>
+    <!-- bdo l = left to right -->
+    <!-- bdo r = right to left -->
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p>
+
+    <hr> <!--linha horizontal-->
+
+    <!--Cap9-->
+    <h1>**Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2> <!-- aquelas que a ordem faz diferença -->
+    <ol type="1" start="0"> <!-- lista ordenada / type = 1 A a I i (romanos)-->
+        <!-- li = list iten , para o html5 não precisa mais do </li> no final do item (OPICIONAL) -->
+        <li>Acordar
+        <li>Tomar banho
+        <li>Tomar café
+        <li>Escovar od dentes
+        <li>faculdade
+        <li>Almoçar
+        <li>Dormir
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <!-- unorded list = ul -->
+    <ul> <!-- type = disc, circle e square -->
+        <li>Pão
+        <li>Tomate
+        <li>Leite
+        <li>Arroz
+    </ul>
+    
+    <h2>Misturando listas</h2>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="3">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JS</li>
+        </ol>
+    </ol>
+
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>PC</li>
+        <ul type="square">
+            <li>Cs</li>
+            <li>Lol</li>
+            <li>Albion</li>
+        </ul>
+        <li>PS</li>
+        <ul type="square">
+            <li>Futebol</li>
+            <ul type="circle">
+                <li>bomba patch</li>
+                <li>Fifa</li>
+            </ul>
+            <li>Luta</li>
+        </ul>
+        <li>Nitendo</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Pokemon</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2> <!-- dl =  definicion list -->
+    <dl>
+        <dt>HTML</dt> <!-- termo -->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!-- definição -->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+    <hr> <!--linha horizontal-->
+
+    <!-- Cap 10 -->
+    <h1>**Trabalhando com links externos</h1> <!-- <a> âncora  href=site  target="_blank" = abri em uma nova aba -->
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no Youtube</a></p>
+
+    <h1>Trabalhando com links internos</h1>
+    <p>Esta é a primeira página. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p> <!-- mesma pasta / target="_self" = mesma página / rel="next" = proxima pag -->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="">página de notícias</a></p> <!-- para outra pag do mesmo site opcional usar target="_self" -->
+
+    <h1>Trabalhando com links para downloads</h1>
+    <ul>
+        <li><a href="livro/livro.pdf" download="livro.pdf" type="application/pdf">Baixar o capitulo 10 em pdf</a></li>
+        <li><a href="livro/livro.zip" download="livro.zip" type="application/zip">Baixar o capitulo 10 compactado em zip</a></li>
+    </ul>
+
+    <hr> <!--linha horizontal-->
+
+    <!-- Cap 11 -->
+    <h1>**Mídias em HTML5</h1>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/ex11/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/ex11/foto-m.png" type="image/png">
+        <img src="imagens/ex11/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <hr> <!--linha horizontal-->
+
+    <h1>**Áudio no seu site</h1>
+    <h1>Reproduzinho Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="imagens/ex11/bluenude-verifiedpicasso.mp3" controls autoplay></audio>
+    <!-- Compativel MP3 WAV OGG-->
+
+    <h2>Outra maneira</h2>
+    <audio preload="metadata" autoplay controls loop> <!--loop = deixa em loop o audio-->
+        <!--
+            Parâmentros = Preload-> 
+                auto(carrega todo o audio para carregar a pag) padrão
+                metadata(carrega umas informações do arquivo) 
+                none(não carrega nada até o comando de play nos controles)
+        -->
+        <!--Tente reproduzir por essa ordem de sources-->
+        <source src="imagens/ex11/bluenude-verifiedpicasso.mp3" type="audio/mpeg">
+        <source src="imagens/ex11/bluenude-verifiedpicasso.ogg" type="audio/ogg">
+        <source src="imagens/ex11/bluenude-verifiedpicasso.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não conseguiu reproduzir o áudio. <a href="imagens/ex11/bluenude-verifiedpicasso.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+    <h1>**Formato de vídeos para sites</h1>
+
+    <!-- formatar videos para web : MP4, WebM, m4v ogv -->
+    <!-- pexels videos -->
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- Metodo simples
+    <video src="imagens/ex11/Video1.mp4" width="560" controls></video>
+    <video src="imagens/ex11/Video1.ogv" width="560" controls></video>
+    <video src="imagens/ex11/Video1.webm" width="560" controls></video>
+    -->
+
+    <!--Metodo teste.. testando as compatibilidades -->
+    <video width="560" height="315" controls> <!-- poster = imagem pra capa do video -->
+        <source src="imagens/ex11/Video1.mp4" type="video/mp4">
+        <source src="imagens/ex11/Video1.webm" type="video/webm">
+        <source src="imagens/ex11/Video1.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatbilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos com hospedagem externa</h1> <!-- diminuindo o trafego de dados. amenizando o gasto do cliente -->
+    <p>Este vídeo está hospedado externo.</p> 
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr> <!--linha horizontal-->
+
+    <h1>CSS - Cascading Style Sheets ou Folhas de Estilo em Cascatas</h1>
+    <h1>Estilo Inline</h1> <!-- menos utilizado, trabalhoso pois vai repetir e poluir o código, usado em situações pontuais do codigo -->
+    <p> &lt;body style="background-color: greenyellow; font-family: Arial,Helvetica, sans-serif;"&gt; </p> <!-- mudando fundo e fonte das letras-->
+
+    <h1 style="color: blue; background-color: blanchedalmond;">Capítulo 1</h1> <!-- muda apenas esse h1, para fazer em outros deve editar o mesmo -->
+    <h2 style="color: darkred;">Capítulo 1.1</h2>
+    <p style="text-align: jusify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos optio similique delectus magni? Impedit temporibus cumque quod odio doloremque repellendus eligendi nisi odit possimus? Non accusantium repellendus asperiores omnis perferendis!</p> <!-- alinhando e organizando o paragrafo-->
+    <h2 style="color: darkred;">Capítulo 1.2</h2>
+    <p style="text-align: jusify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit provident sit, amet earum error tenetur necessitatibus non minima quidem nam, aliquid pariatur? Corrupti non dignissimos inventore rerum cum iste.</p>
+    <h1 style="color: blue; background-color: blanchedalmond;">Capítulo 2</h1>
+    <h2 style="color: darkred;">Capítulo 2.1</h2>
+    <p style="text-align: jusify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem illo ipsam libero? Autem quis excepturi optio, porro illo pariatur tenetur sed ex eos obcaecati minima suscipit dolores nulla exercitationem iure.</p>
+    
+    <hr> <!--linha horizontal-->
+
+    <h1>Estilo Locais / internos</h1> <!-- Separa contudo de estlos -->
+    <p>Vantagens: Praticidade de evitar repetição de códigos, altera todos, menos trabalhosa, utilizado bastente no dia a dia para um documento.</p>
+    <p>Desvantagens: estilos ocupam muitas linhas de código e não é utilizado por outras páginas</p>
+
+    <pre>
+        <code>
+            &lt;head&gt;
+            ...
+                &lt;style&gt;
+                    body {            (tudo que colocar aqui dentro vai ser aplicado no body
+                        background-color: greenyellow;
+                        font-family: Arial,Helvetica, sans-serif;
+                        font-size: 20px;
+                    }   
+                    h1 {               (tudo que colocar aqui dentro vai ser aplicado nos h1
+                        color: blue; 
+                        background-color: blanchedalmond; 
+                    } 
+                    h2 {               (tudo que colocar aqui dentro vai ser aplicado nos h2
+                        color: darkred;
+                    } 
+                    p {
+                        text-align: jusify;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+        </code>
+    </pre>
+
+    <hr> <!--linha horizontal-->
+
+    <h1>Estilo Externos - style em outro arquivo</h1> <!-- Documento externo que pode ser utilizados por diferentes páginas -->
+    <p>Vantagens: Praticidade de evitar repetição de códigos, altera todos, menos trabalhosa, utilizado bastente no dia a dia para para vários documento.</p>
+
+    <pre>
+        <code>
+            &lt;head&gt;
+            ...
+                &lt;link rel="stylesheet" href="style.css"&gt;   (link para acessar o documento com os estilos para página)
+            &lt;/head&gt;
+        </code>
+    </pre>
+
+    <pre>
+        <p>Outro documento</p>
+        <code>
+            @charset "UTF-8";
+            
+            body {  
+                background-color: greenyellow;
+                font-family: Arial,Helvetica, sans-serif;
+                font-size: 20px;
+            }   
+            h1 {
+                color: blue;
+                background-color: blanchedalmond; 
+            } 
+            h2 {  
+                color: darkred;
+            }
+            p {
+                text-align: jusify;
+            }
+        </code>
+    </pre>
+
+
+</body>
+</html>
